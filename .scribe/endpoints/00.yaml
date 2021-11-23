@@ -1,0 +1,228 @@
+name: Endpoints
+description: ''
+endpoints:
+  - httpMethods:
+      - GET
+    uri: api/auth/jwt/token
+    metadata:
+      title: 'Get a JWT via given credentials.'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: api/auth/jwt/refresh
+    metadata:
+      title: 'Refreshes a jwt (ie. extends it''s TTL)'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - DELETE
+    uri: api/auth/jwt/token
+    metadata:
+      title: 'Log the user out (Invalidate the token).'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: api/auth/me
+    metadata:
+      title: 'Get the authenticated User.'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: api/users
+    metadata:
+      title: 'Request to retrieve a collection of all items of this resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: 'api/users/{uuid}'
+    metadata:
+      title: 'Request to retrieve a single item of this resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: consequatur
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - POST
+    uri: api/users
+    metadata:
+      title: 'Request to create a new resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - PUT
+    uri: 'api/users/{uuid}'
+    metadata:
+      title: 'Request to create or replace a resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: error
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - PATCH
+    uri: 'api/users/{uuid}'
+    metadata:
+      title: 'Request to update the specified resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: enim
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - DELETE
+    uri: 'api/users/{uuid}'
+    metadata:
+      title: 'Deletes a resource by UUID'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: quaerat
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: api/roles
+    metadata:
+      title: 'Request to retrieve a collection of all items of this resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: api/status
+    metadata:
+      title: 'Status (Example API Doc)'
+      description: |-
+        Check that the service is up. If everything is okay, you'll get a 200 OK response.
+
+        Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses:
+      - status: 400
+        content: '{"status": "down", "services": {"database": "up", "redis": "down"}}'
+        headers: [ ]
+        description: '400, Service is unhealthy'
+      - status: 200
+        content: '{"status":"up","services":{"database":"up","redis":"up"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields:
+      status:
+        name: status
+        description: 'The status of this API (`up` or `down`).'
+        type: string
+      services:
+        name: services
+        description: 'Map of each downstream service and their status (`up` or `down`).'
+        type: object

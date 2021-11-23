@@ -57,7 +57,7 @@ return [
         |
         */
 
-        'public' => env('JWT_PUBLIC_KEY'),
+        'public' => env('JWT_PUBLIC_KEY', 'file://'.resource_path('keys/jwt.key.pub')),
 
         /*
         |--------------------------------------------------------------------------
@@ -70,7 +70,7 @@ return [
         |
         */
 
-        'private' => env('JWT_PRIVATE_KEY'),
+        'private' => env('JWT_PRIVATE_KEY', 'file://'.resource_path('keys/jwt.key')),
 
         /*
         |--------------------------------------------------------------------------
@@ -133,7 +133,7 @@ return [
     |
     */
 
-    'algo' => env('JWT_ALGO', 'HS512'),
+    'algo' => env('JWT_ALGO', 'RS512'),
 
     /*
     |--------------------------------------------------------------------------
