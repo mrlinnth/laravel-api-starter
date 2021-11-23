@@ -9,13 +9,30 @@ class CreateFailedJobsTable extends Migration
     const TABLE_NAME = 'failed_jobs';
 
     /**
+     * The database schema.
+     *
+     * @var \Illuminate\Database\Schema\Builder
+     */
+    protected $schema;
+
+    /**
+     * Create a new migration instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->schema = Schema::connection('mysql');
+    }
+
+    /**
      * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create(static::TABLE_NAME, function (Blueprint $table) {
+        $this->schema->create(static::TABLE_NAME, function (Blueprint $table) {
             $table->id();
             $table->string('uuid')->unique();
             $table->text('connection');
@@ -33,6 +50,6 @@ class CreateFailedJobsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(static::TABLE_NAME);
+        $this->schema->dropIfExists(static::TABLE_NAME);
     }
 }

@@ -9,13 +9,30 @@ class CreateRolesTable extends Migration
     const TABLE_NAME = 'roles';
 
     /**
+     * The database schema.
+     *
+     * @var \Illuminate\Database\Schema\Builder
+     */
+    protected $schema;
+
+    /**
+     * Create a new migration instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->schema = Schema::connection('mysql');
+    }
+
+    /**
      * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create(static::TABLE_NAME, function (Blueprint $table) {
+        $this->schema->create(static::TABLE_NAME, function (Blueprint $table) {
             $table->uuid('role_id');
 
             $table->string('name')->unique();
@@ -35,6 +52,6 @@ class CreateRolesTable extends Migration
      */
     public function down()
     {
-        Schema::drop(static::TABLE_NAME);
+        $this->schema->drop(static::TABLE_NAME);
     }
 }

@@ -1,7 +1,6 @@
 <?php
 
 use Dingo\Api\Routing\Router;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +16,18 @@ use Illuminate\Http\Request;
 /*
  * Welcome route - link to any public API documentation here
  */
-Route::get('/', function () {
-    echo 'Welcome to our API';
-});
+//Route::get('/', function () {
+//    echo 'Welcome to our API';
+//});
 
 /** @var \Dingo\Api\Routing\Router $api */
 $api = app('Dingo\Api\Routing\Router');
 $api->version('v1', ['middleware' => ['api']], function (Router $api) {
+    /*
+     * Test route
+     */
+    $api->get('/test', 'App\Http\Controllers\PlayGroundController@index');
+
     /*
      * Authentication
      */
@@ -67,5 +71,16 @@ $api->version('v1', ['middleware' => ['api']], function (Router $api) {
         $api->group(['prefix' => 'roles'], function (Router $api) {
             $api->get('/', 'App\Http\Controllers\RoleController@getAll');
         });
+    });
+
+    /*
+     * Admins
+     */
+    $api->group(['prefix' => 'admins'], function (Router $api) {
+        $api->get('/', 'App\Http\Controllers\AdminController@index');
+        $api->get('/{uuid}', 'App\Http\Controllers\AdminController@show');
+//        $api->post('/', 'App\Http\Controllers\AdminController@post');
+//        $api->patch('/{uuid}', 'App\Http\Controllers\AdminController@patch');
+//        $api->delete('/{uuid}', 'App\Http\Controllers\AdminController@delete');
     });
 });
