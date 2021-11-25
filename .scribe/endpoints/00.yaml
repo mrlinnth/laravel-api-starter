@@ -226,3 +226,138 @@ endpoints:
         name: services
         description: 'Map of each downstream service and their status (`up` or `down`).'
         type: object
+  - httpMethods:
+      - GET
+    uri: api/mongodb-users
+    metadata:
+      title: 'Request to retrieve a collection of all items of this resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses:
+      - status: 200
+        content: '{"current_page":1,"data":[{"_id":"6019383a9282f372f674b282","name":"shashib","email":"shashib@yopmail.com","password":"$2a$10$eA8u9QXkRBUxF2xgMe\/9X.lgHslLsBcQWvVzSMESfZgZI7fmRsn\/G","userDeviceId":"d_yv0U8yQw-t0LVcF9bDaI:APA91bH_svnnZk6VcS0ik1JEV_j64pbBpH7FdCa1Tl-NJGQTxjBc7knJBlNsTAkdlk9BRztKMrzLK6BLzqt3MuIpBHKmcMRg4rdV7v70gkVlZczs99pYEjy3BYeexcC4CHQlkLMUO3vk","roles":[{"$ref":"role","$id":{"$oid":"5fb66c2217c1c057991c0b6e"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"6019623c9282f372f674b2ae","name":"UAT Merchant Test 1","email":"uatmerchanttest1@yopmail.com","password":"$2a$10$agONUTKe2CmckKBx.Xc3hOgz6Y9igtk9ioQP8wreIxmMdKVsqkg1y","userDeviceId":"fWfbt0hyRPGa45UBaT4796:APA91bGd5h16pWuQICgEIg5e5BQpFuvTRKTeZwOUljoKrpzOJmeLW1tzfCkPvrdHQNXziJsoIkBjr_uehNWS1dFXSv4HVvWMSBmvHEpWycmRT7Kz9ApVbgtQkaAhEpLpQlC8g7NPLDId","roles":[{"$ref":"role","$id":{"$oid":"5fb66c2217c1c057991c0b6e"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601a0353e8a93e542d68b4ce","name":"UAT Merchant User 1","email":"uatdummymerchantstoremgr@yopmail.com","phoneNumber":"0123434343","password":"$2a$10$a38RIcaXOVPYZIPgYpSyjeQmVI\/VAveOAB9\/I9joVBYuM47XUgHWi","userDeviceId":"dZ-yYppHTiC-Ad1aqDrFoi:APA91bGMlE6qDMP8mMt884WWW1Aw1hvBtqr6xO-P0hGqXZog3Tpe_ipRSjeIFISqH7VWmNfjMeB879UhiTj4LSTT9wI2VJXCnfqtJ6g3P-wkhjQ8HU3k4kljXbx1M5iS8BvLLlffCbk3","roles":[{"$ref":"role","$id":{"$oid":"6020a0c661c1085f58a347cb"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601abe8ee8a93e542d68b59b","name":"jonnytest","email":"jonny@alphasirius.com","password":"$2a$10$a38RIcaXOVPYZIPgYpSyjeQmVI\/VAveOAB9\/I9joVBYuM47XUgHWi","userDeviceId":"e0-IXpt2RwSqcsbUyvHGEM:APA91bFjSmsnbSSJ0KSKY8VIUnJrSOwijiWmIYkrmPS3qYK3QAmCCbiRKfSi5vZ2qoOBHkOOAmX7OWtqwZX378Pu2tOIUmnf4YZepfp_x3QYAILHKrDhVwzNawl-09DERkso7Kbz7Vmm","roles":[{"$ref":"role","$id":{"$oid":"5fb66c2217c1c057991c0b6e"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601ac2dee8a93e542d68b5aa","name":"Mobile APP Tester 1","email":"uatmobileaccesstester1@yopmail.com","phoneNumber":"0123456789","password":"$2a$10$dBsZdKpgxSeP9mi3ATvQy.j36sWYjVs.BE6I5uyNvQg8C8MV0xF8e","userDeviceId":"fdEBPLJXS12OXj84ip6gqZ:APA91bEU-dY77FR65Xm-IbLWgIZwquknh_J4NUyjr5_0NwvHTdsMnbbZLwFzLeQMsqN7ZQFafrSR347rU3vJqeHOjcK5QbnqFP_Dj5m501pCski2WXZ5ykgQ5GYgyfWKM0gBzA9FYpvs","roles":[{"$ref":"role","$id":{"$oid":"601a023fe8a93e542d68b4c1"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601bb14d7fe2191b9b66f127","name":"Riya S.","email":"riyas@yopmail.com","phoneNumber":"985522565","password":"$2a$10$NaoF5fLNRv1e4L1ah.gFPOALU1Ek8rU.4JfLsGKE32yr7SMpIlrU2","userDeviceId":"f0YfoZYFTxGY0VXFvH_XbY:APA91bEGrNN2iiQRBZROicZ-qoZGqjs2BLd4QqYrRI5AInlYlXbFqTjJcIsEgioR8QS6wagzSu6WdHJQGWXJtn2uSVIPlgyEdylmhNpMGb1DBtwJP7_gHYDfNB7OxjU5IgvQZL_Jzoah","roles":[{"$ref":"role","$id":{"$oid":"601bb1107fe2191b9b66f11a"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601be78feb8afe44b7f1bae3","name":" Chris Hemsworth","email":"chris@yopmail.com","phoneNumber":"963258552","password":"$2a$10$CYPMl36tTx0BEMvZzD0louu7HPEVroUIb978EvQIUjcu\/wv5wO.66","roles":[{"$ref":"role","$id":{"$oid":"601be764eb8afe44b7f1bad6"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601bfd92eb8afe44b7f1baed","name":"caluser","email":"cal@yopmail.com","phoneNumber":"852147963","password":"$2a$10$gZqiiO5JJ0Q9E8ljXwM0deEwZV3lGPCn0wj49YbjN.luAb2.GNQ.C","roles":[{"$ref":"role","$id":{"$oid":"601be764eb8afe44b7f1bad6"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601ccaffc637c711fa15e360","name":"Aish","email":"aish@yopmail.com","phoneNumber":"9632541122","password":"$2a$10$ZW9R4vH2M7GxfeMWNbOe3OCNt1m8YTNHivO6mcOJDKboHgTgQuDbC","roles":[{"$ref":"role","$id":{"$oid":"601be764eb8afe44b7f1bad6"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601ccd9bc637c711fa15e362","name":"Kumar K","email":"kumar@yopmail.com","phoneNumber":"9632554115","password":"$2a$10$GisnOR5Xdyf0H166T2hZpu2i.bTNTc2aTugNu5CkjA0N3JinhjiOi","roles":[{"$ref":"role","$id":{"$oid":"601be764eb8afe44b7f1bad6"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601cef7ac637c711fa15e376","name":"Charlie","email":"charlie@yopmail.com","phoneNumber":"9633258522","password":"$2a$10$zAQkFOVfNDtCkMLulCKVcumyxgkfqA9Q6Lq.Cvkz3zuHMKFWThO1i","roles":[{"$ref":"role","$id":{"$oid":"601be764eb8afe44b7f1bad6"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601d15a45ed97d3b832a5792","name":"sumits Kumar1","email":"sumitk@yopmail.com","phoneNumber":"7015358696","password":"$2a$10$P.cEBb913tn1vJw9SWPRq.WD0gi0x49jCZ723T1Toyi0dYP47ZHBm","roles":[{"$ref":"role","$id":{"$oid":"601be764eb8afe44b7f1bad6"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601fccb353b8203d17894854","name":"newtest","email":"newtest@yopmail.com","phoneNumber":"963258412","password":"$2a$10$p\/psOYMuFhrr72sqrYYa9Ou.7l5Kt8prGdfn.dt.vcT9ccu9EbGyS","roles":[{"$ref":"role","$id":{"$oid":"601a9eece8a93e542d68b57d"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"601ff2dc61c1085f58a3477c","name":"frankuat","email":"frankuat@yopmail.com","password":"$2a$10$VYME6Aj2WAMK5xs7Up54TuVB7QhPK8gpVYWlm0nIcICHiotaGMKEC","roles":[{"$ref":"role","$id":{"$oid":"5fb66c2217c1c057991c0b6e"}}],"isActive":true,"_class":"com.food.model.User"},{"_id":"6020183a61c1085f58a347b7","name":"frankuat9","email":"frankuat9@yopmail.com","password":"$2a$10$bCboUTsbPJBmLv0urOukz.517Kxd8kq.up\/1sz\/hz0kpCNK7rQq0.","roles":[{"$ref":"role","$id":{"$oid":"5fb66c2217c1c057991c0b6e"}}],"isActive":true,"_class":"com.food.model.User"}],"first_page_url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=1","from":1,"last_page":6,"last_page_url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=6","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=1","label":"1","active":true},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=2","label":"2","active":false},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=3","label":"3","active":false},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=4","label":"4","active":false},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=5","label":"5","active":false},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=6","label":"6","active":false},{"url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/laravel-api.test\/api\/mongodb-users?page=2","path":"http:\/\/laravel-api.test\/api\/mongodb-users","per_page":15,"prev_page_url":null,"to":15,"total":79}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+        description: null
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: 'api/mongodb-users/{uuid}'
+    metadata:
+      title: 'Request to retrieve a single item of this resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: quibusdam
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - POST
+    uri: api/mongodb-users
+    metadata:
+      title: 'Request to create a new resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - PUT
+    uri: 'api/mongodb-users/{uuid}'
+    metadata:
+      title: 'Request to create or replace a resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: veritatis
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - PATCH
+    uri: 'api/mongodb-users/{uuid}'
+    metadata:
+      title: 'Request to update the specified resource'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: qui
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - DELETE
+    uri: 'api/mongodb-users/{uuid}'
+    metadata:
+      title: 'Deletes a resource by UUID'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: est
+        type: string
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]
+  - httpMethods:
+      - GET
+    uri: api/mongodb-users/check-password
+    metadata:
+      title: 'Check existing MongoDB password hash'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: [ ]
+    queryParameters: [ ]
+    bodyParameters: [ ]
+    responses: [ ]
+    responseFields: [ ]

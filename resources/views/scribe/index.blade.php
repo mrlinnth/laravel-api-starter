@@ -54,7 +54,7 @@
         <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
     </ul>
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: November 23 2021</li>
+        <li>Last updated: November 25 2021</li>
     </ul>
 </div>
 <div class="page-wrapper">
@@ -519,12 +519,12 @@ print_r(json_decode((string) $body));</code></pre>
 
 
 <pre><code class="language-bash">curl --request GET \
-    --get "http://laravel-api.test/api/users/enim" \
+    --get "http://laravel-api.test/api/users/consequatur" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/users/enim"
+    "http://laravel-api.test/api/users/consequatur"
 );
 
 const headers = {
@@ -539,7 +539,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://laravel-api.test/api/users/enim',
+    'http://laravel-api.test/api/users/consequatur',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -598,7 +598,7 @@ print_r(json_decode((string) $body));</code></pre>
                 <input type="text"
                        name="uuid"
                        data-endpoint="GETapi-users--uuid-"
-                       value="enim"
+                       value="consequatur"
                        data-component="url" hidden>
                 <br>
 
@@ -702,12 +702,12 @@ print_r(json_decode((string) $body));</code></pre>
 
 
 <pre><code class="language-bash">curl --request PUT \
-    "http://laravel-api.test/api/users/quia" \
+    "http://laravel-api.test/api/users/error" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/users/quia"
+    "http://laravel-api.test/api/users/error"
 );
 
 const headers = {
@@ -722,7 +722,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://laravel-api.test/api/users/quia',
+    'http://laravel-api.test/api/users/error',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -781,7 +781,7 @@ print_r(json_decode((string) $body));</code></pre>
                 <input type="text"
                        name="uuid"
                        data-endpoint="PUTapi-users--uuid-"
-                       value="quia"
+                       value="error"
                        data-component="url" hidden>
                 <br>
 
@@ -799,12 +799,12 @@ print_r(json_decode((string) $body));</code></pre>
 
 
 <pre><code class="language-bash">curl --request PATCH \
-    "http://laravel-api.test/api/users/velit" \
+    "http://laravel-api.test/api/users/enim" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/users/velit"
+    "http://laravel-api.test/api/users/enim"
 );
 
 const headers = {
@@ -819,7 +819,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;patch(
-    'http://laravel-api.test/api/users/velit',
+    'http://laravel-api.test/api/users/enim',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -878,7 +878,7 @@ print_r(json_decode((string) $body));</code></pre>
                 <input type="text"
                        name="uuid"
                        data-endpoint="PATCHapi-users--uuid-"
-                       value="velit"
+                       value="enim"
                        data-component="url" hidden>
                 <br>
 
@@ -896,12 +896,12 @@ print_r(json_decode((string) $body));</code></pre>
 
 
 <pre><code class="language-bash">curl --request DELETE \
-    "http://laravel-api.test/api/users/voluptatibus" \
+    "http://laravel-api.test/api/users/quaerat" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/users/voluptatibus"
+    "http://laravel-api.test/api/users/quaerat"
 );
 
 const headers = {
@@ -916,7 +916,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://laravel-api.test/api/users/voluptatibus',
+    'http://laravel-api.test/api/users/quaerat',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -975,7 +975,7 @@ print_r(json_decode((string) $body));</code></pre>
                 <input type="text"
                        name="uuid"
                        data-endpoint="DELETEapi-users--uuid-"
-                       value="voluptatibus"
+                       value="quaerat"
                        data-component="url" hidden>
                 <br>
 
@@ -1201,23 +1201,23 @@ content-type: application/json
             <br>
         <p>Map of each downstream service and their status (<code>up</code> or <code>down</code>).</p>
         </p>
-        <h2 id="endpoints-GETapi-admins">Request to retrieve a collection of all items of this resource</h2>
+        <h2 id="endpoints-GETapi-mongodb-users">Request to retrieve a collection of all items of this resource</h2>
 
         <p>
         </p>
 
 
-        <span id="example-requests-GETapi-admins">
+        <span id="example-requests-GETapi-mongodb-users">
 <blockquote>Example request:</blockquote>
 
 
 <pre><code class="language-bash">curl --request GET \
-    --get "http://laravel-api.test/api/admins" \
+    --get "http://laravel-api.test/api/mongodb-users" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/admins"
+    "http://laravel-api.test/api/mongodb-users"
 );
 
 const headers = {
@@ -1232,7 +1232,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://laravel-api.test/api/admins',
+    'http://laravel-api.test/api/mongodb-users',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1244,7 +1244,7 @@ $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 </span>
 
-        <span id="example-responses-GETapi-admins">
+        <span id="example-responses-GETapi-mongodb-users">
             <blockquote>
             <p>Example response (200):</p>
         </blockquote>
@@ -1261,265 +1261,266 @@ content-type: application/json
     &quot;current_page&quot;: 1,
     &quot;data&quot;: [
         {
-            &quot;_id&quot;: &quot;5fd5010e7c471e3fdd54ae45&quot;,
-            &quot;name&quot;: &quot;admin&quot;,
-            &quot;email&quot;: &quot;admin@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1607794958088,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fd5010d7c471e3fdd54ae44&quot;
+            &quot;_id&quot;: &quot;6019383a9282f372f674b282&quot;,
+            &quot;name&quot;: &quot;shashib&quot;,
+            &quot;email&quot;: &quot;shashib@yopmail.com&quot;,
+            &quot;password&quot;: &quot;$2a$10$eA8u9QXkRBUxF2xgMe/9X.lgHslLsBcQWvVzSMESfZgZI7fmRsn/G&quot;,
+            &quot;userDeviceId&quot;: &quot;d_yv0U8yQw-t0LVcF9bDaI:APA91bH_svnnZk6VcS0ik1JEV_j64pbBpH7FdCa1Tl-NJGQTxjBc7knJBlNsTAkdlk9BRztKMrzLK6BLzqt3MuIpBHKmcMRg4rdV7v70gkVlZczs99pYEjy3BYeexcC4CHQlkLMUO3vk&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;5fb66c2217c1c057991c0b6e&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fd50cf17c471e3fdd54ae5c&quot;,
-            &quot;name&quot;: &quot;Shashi&quot;,
-            &quot;email&quot;: &quot;shashi@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1607798001794,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fd50cf17c471e3fdd54ae5b&quot;
+            &quot;_id&quot;: &quot;6019623c9282f372f674b2ae&quot;,
+            &quot;name&quot;: &quot;UAT Merchant Test 1&quot;,
+            &quot;email&quot;: &quot;uatmerchanttest1@yopmail.com&quot;,
+            &quot;password&quot;: &quot;$2a$10$agONUTKe2CmckKBx.Xc3hOgz6Y9igtk9ioQP8wreIxmMdKVsqkg1y&quot;,
+            &quot;userDeviceId&quot;: &quot;fWfbt0hyRPGa45UBaT4796:APA91bGd5h16pWuQICgEIg5e5BQpFuvTRKTeZwOUljoKrpzOJmeLW1tzfCkPvrdHQNXziJsoIkBjr_uehNWS1dFXSv4HVvWMSBmvHEpWycmRT7Kz9ApVbgtQkaAhEpLpQlC8g7NPLDId&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;5fb66c2217c1c057991c0b6e&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fd74c3adff5fe74e8bd1b19&quot;,
-            &quot;name&quot;: &quot;YTre&quot;,
-            &quot;email&quot;: &quot;lalalal@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1607945274396,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fd74c3adff5fe74e8bd1b18&quot;
+            &quot;_id&quot;: &quot;601a0353e8a93e542d68b4ce&quot;,
+            &quot;name&quot;: &quot;UAT Merchant User 1&quot;,
+            &quot;email&quot;: &quot;uatdummymerchantstoremgr@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;0123434343&quot;,
+            &quot;password&quot;: &quot;$2a$10$a38RIcaXOVPYZIPgYpSyjeQmVI/VAveOAB9/I9joVBYuM47XUgHWi&quot;,
+            &quot;userDeviceId&quot;: &quot;dZ-yYppHTiC-Ad1aqDrFoi:APA91bGMlE6qDMP8mMt884WWW1Aw1hvBtqr6xO-P0hGqXZog3Tpe_ipRSjeIFISqH7VWmNfjMeB879UhiTj4LSTT9wI2VJXCnfqtJ6g3P-wkhjQ8HU3k4kljXbx1M5iS8BvLLlffCbk3&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;6020a0c661c1085f58a347cb&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fd74fe7dff5fe74e8bd1b1b&quot;,
-            &quot;name&quot;: &quot;poiu&quot;,
-            &quot;email&quot;: &quot;admin@yopmail.comm&quot;,
-            &quot;registeredDate&quot;: 1607946215059,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fd74fe7dff5fe74e8bd1b1a&quot;
+            &quot;_id&quot;: &quot;601abe8ee8a93e542d68b59b&quot;,
+            &quot;name&quot;: &quot;jonnytest&quot;,
+            &quot;email&quot;: &quot;jonny@alphasirius.com&quot;,
+            &quot;password&quot;: &quot;$2a$10$a38RIcaXOVPYZIPgYpSyjeQmVI/VAveOAB9/I9joVBYuM47XUgHWi&quot;,
+            &quot;userDeviceId&quot;: &quot;e0-IXpt2RwSqcsbUyvHGEM:APA91bFjSmsnbSSJ0KSKY8VIUnJrSOwijiWmIYkrmPS3qYK3QAmCCbiRKfSi5vZ2qoOBHkOOAmX7OWtqwZX378Pu2tOIUmnf4YZepfp_x3QYAILHKrDhVwzNawl-09DERkso7Kbz7Vmm&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;5fb66c2217c1c057991c0b6e&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fd750aedff5fe74e8bd1b1d&quot;,
-            &quot;name&quot;: &quot;shashi&quot;,
-            &quot;email&quot;: &quot;shashitest@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1607946414838,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fd750aedff5fe74e8bd1b1c&quot;
+            &quot;_id&quot;: &quot;601ac2dee8a93e542d68b5aa&quot;,
+            &quot;name&quot;: &quot;Mobile APP Tester 1&quot;,
+            &quot;email&quot;: &quot;uatmobileaccesstester1@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;0123456789&quot;,
+            &quot;password&quot;: &quot;$2a$10$dBsZdKpgxSeP9mi3ATvQy.j36sWYjVs.BE6I5uyNvQg8C8MV0xF8e&quot;,
+            &quot;userDeviceId&quot;: &quot;fdEBPLJXS12OXj84ip6gqZ:APA91bEU-dY77FR65Xm-IbLWgIZwquknh_J4NUyjr5_0NwvHTdsMnbbZLwFzLeQMsqN7ZQFafrSR347rU3vJqeHOjcK5QbnqFP_Dj5m501pCski2WXZ5ykgQ5GYgyfWKM0gBzA9FYpvs&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601a023fe8a93e542d68b4c1&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fd841ac9b420c1302c6f871&quot;,
-            &quot;name&quot;: &quot;Shruti&quot;,
-            &quot;email&quot;: &quot;shru@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1608008108372,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fd841ac9b420c1302c6f870&quot;
+            &quot;_id&quot;: &quot;601bb14d7fe2191b9b66f127&quot;,
+            &quot;name&quot;: &quot;Riya S.&quot;,
+            &quot;email&quot;: &quot;riyas@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;985522565&quot;,
+            &quot;password&quot;: &quot;$2a$10$NaoF5fLNRv1e4L1ah.gFPOALU1Ek8rU.4JfLsGKE32yr7SMpIlrU2&quot;,
+            &quot;userDeviceId&quot;: &quot;f0YfoZYFTxGY0VXFvH_XbY:APA91bEGrNN2iiQRBZROicZ-qoZGqjs2BLd4QqYrRI5AInlYlXbFqTjJcIsEgioR8QS6wagzSu6WdHJQGWXJtn2uSVIPlgyEdylmhNpMGb1DBtwJP7_gHYDfNB7OxjU5IgvQZL_Jzoah&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601bb1107fe2191b9b66f11a&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fe0c2456ce3d90c268087f2&quot;,
-            &quot;name&quot;: &quot;Elaine Chong&quot;,
-            &quot;email&quot;: &quot;chongyeeleng7250@gmail.com&quot;,
-            &quot;registeredDate&quot;: 1608565317778,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fe0c2456ce3d90c268087f1&quot;
+            &quot;_id&quot;: &quot;601be78feb8afe44b7f1bae3&quot;,
+            &quot;name&quot;: &quot; Chris Hemsworth&quot;,
+            &quot;email&quot;: &quot;chris@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;963258552&quot;,
+            &quot;password&quot;: &quot;$2a$10$CYPMl36tTx0BEMvZzD0louu7HPEVroUIb978EvQIUjcu/wv5wO.66&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601be764eb8afe44b7f1bad6&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fe0c6d96ce3d90c26808802&quot;,
-            &quot;name&quot;: &quot;Txn Module Viewer&quot;,
-            &quot;email&quot;: &quot;elaine.chong@alphasirius.io&quot;,
-            &quot;registeredDate&quot;: 1608566489803,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fe0c6d96ce3d90c26808801&quot;
+            &quot;_id&quot;: &quot;601bfd92eb8afe44b7f1baed&quot;,
+            &quot;name&quot;: &quot;caluser&quot;,
+            &quot;email&quot;: &quot;cal@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;852147963&quot;,
+            &quot;password&quot;: &quot;$2a$10$gZqiiO5JJ0Q9E8ljXwM0deEwZV3lGPCn0wj49YbjN.luAb2.GNQ.C&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601be764eb8afe44b7f1bad6&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fe0c89a6ce3d90c26808804&quot;,
-            &quot;name&quot;: &quot;Report module viewer&quot;,
-            &quot;email&quot;: &quot;elaine.chong@gmail.com&quot;,
-            &quot;registeredDate&quot;: 1608566938628,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fe0c89a6ce3d90c26808803&quot;
+            &quot;_id&quot;: &quot;601ccaffc637c711fa15e360&quot;,
+            &quot;name&quot;: &quot;Aish&quot;,
+            &quot;email&quot;: &quot;aish@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;9632541122&quot;,
+            &quot;password&quot;: &quot;$2a$10$ZW9R4vH2M7GxfeMWNbOe3OCNt1m8YTNHivO6mcOJDKboHgTgQuDbC&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601be764eb8afe44b7f1bad6&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fe0ca816ce3d90c26808806&quot;,
-            &quot;name&quot;: &quot;Role module viewer&quot;,
-            &quot;email&quot;: &quot;elaine.chong@yahoo.com&quot;,
-            &quot;registeredDate&quot;: 1608567425746,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fe0ca816ce3d90c26808805&quot;
+            &quot;_id&quot;: &quot;601ccd9bc637c711fa15e362&quot;,
+            &quot;name&quot;: &quot;Kumar K&quot;,
+            &quot;email&quot;: &quot;kumar@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;9632554115&quot;,
+            &quot;password&quot;: &quot;$2a$10$GisnOR5Xdyf0H166T2hZpu2i.bTNTc2aTugNu5CkjA0N3JinhjiOi&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601be764eb8afe44b7f1bad6&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fe5cf92ce0c027a446b83ff&quot;,
-            &quot;name&quot;: &quot;testdashbord&quot;,
-            &quot;email&quot;: &quot;dashboard@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1608896402869,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fe5cf92ce0c027a446b83fe&quot;
+            &quot;_id&quot;: &quot;601cef7ac637c711fa15e376&quot;,
+            &quot;name&quot;: &quot;Charlie&quot;,
+            &quot;email&quot;: &quot;charlie@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;9633258522&quot;,
+            &quot;password&quot;: &quot;$2a$10$zAQkFOVfNDtCkMLulCKVcumyxgkfqA9Q6Lq.Cvkz3zuHMKFWThO1i&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601be764eb8afe44b7f1bad6&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fe6bf3d691a452bc669aa36&quot;,
-            &quot;name&quot;: &quot;FrankUAT5&quot;,
-            &quot;email&quot;: &quot;frankuat5@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1608957757715,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fe6bf3d691a452bc669aa35&quot;
+            &quot;_id&quot;: &quot;601d15a45ed97d3b832a5792&quot;,
+            &quot;name&quot;: &quot;sumits Kumar1&quot;,
+            &quot;email&quot;: &quot;sumitk@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;7015358696&quot;,
+            &quot;password&quot;: &quot;$2a$10$P.cEBb913tn1vJw9SWPRq.WD0gi0x49jCZ723T1Toyi0dYP47ZHBm&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601be764eb8afe44b7f1bad6&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5fec252be6364a6a6b5bc005&quot;,
-            &quot;name&quot;: &quot;testSub&quot;,
-            &quot;email&quot;: &quot;testsub@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1609311531650,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5fec252be6364a6a6b5bc004&quot;
+            &quot;_id&quot;: &quot;601fccb353b8203d17894854&quot;,
+            &quot;name&quot;: &quot;newtest&quot;,
+            &quot;email&quot;: &quot;newtest@yopmail.com&quot;,
+            &quot;phoneNumber&quot;: &quot;963258412&quot;,
+            &quot;password&quot;: &quot;$2a$10$p/psOYMuFhrr72sqrYYa9Ou.7l5Kt8prGdfn.dt.vcT9ccu9EbGyS&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;601a9eece8a93e542d68b57d&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;5ff86504eb5b110d5c0c5e8d&quot;,
-            &quot;name&quot;: &quot;bactestu&quot;,
-            &quot;email&quot;: &quot;abc@yopmail.com&quot;,
-            &quot;registeredDate&quot;: 1610114308035,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;5ff86504eb5b110d5c0c5e8c&quot;
+            &quot;_id&quot;: &quot;601ff2dc61c1085f58a3477c&quot;,
+            &quot;name&quot;: &quot;frankuat&quot;,
+            &quot;email&quot;: &quot;frankuat@yopmail.com&quot;,
+            &quot;password&quot;: &quot;$2a$10$VYME6Aj2WAMK5xs7Up54TuVB7QhPK8gpVYWlm0nIcICHiotaGMKEC&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;5fb66c2217c1c057991c0b6e&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         },
         {
-            &quot;_id&quot;: &quot;6058e5b5bec760195366ab44&quot;,
-            &quot;name&quot;: &quot;Jonny&quot;,
-            &quot;email&quot;: &quot;jonny@alphasirius.io&quot;,
-            &quot;registeredDate&quot;: 1616438708962,
-            &quot;activationDate&quot;: 0,
-            &quot;userId&quot;: {
-                &quot;$ref&quot;: &quot;adminUser&quot;,
-                &quot;$id&quot;: {
-                    &quot;$oid&quot;: &quot;6058e5b4bec760195366ab43&quot;
+            &quot;_id&quot;: &quot;6020183a61c1085f58a347b7&quot;,
+            &quot;name&quot;: &quot;frankuat9&quot;,
+            &quot;email&quot;: &quot;frankuat9@yopmail.com&quot;,
+            &quot;password&quot;: &quot;$2a$10$bCboUTsbPJBmLv0urOukz.517Kxd8kq.up/1sz/hz0kpCNK7rQq0.&quot;,
+            &quot;roles&quot;: [
+                {
+                    &quot;$ref&quot;: &quot;role&quot;,
+                    &quot;$id&quot;: {
+                        &quot;$oid&quot;: &quot;5fb66c2217c1c057991c0b6e&quot;
+                    }
                 }
-            },
+            ],
             &quot;isActive&quot;: true,
-            &quot;isDeleted&quot;: false,
-            &quot;isAdmin&quot;: false,
-            &quot;_class&quot;: &quot;com.food.model.Admin&quot;
+            &quot;_class&quot;: &quot;com.food.model.User&quot;
         }
     ],
-    &quot;first_page_url&quot;: &quot;http://laravel-api.test/api/admins?page=1&quot;,
+    &quot;first_page_url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=1&quot;,
     &quot;from&quot;: 1,
-    &quot;last_page&quot;: 2,
-    &quot;last_page_url&quot;: &quot;http://laravel-api.test/api/admins?page=2&quot;,
+    &quot;last_page&quot;: 6,
+    &quot;last_page_url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=6&quot;,
     &quot;links&quot;: [
         {
             &quot;url&quot;: null,
@@ -1527,88 +1528,108 @@ content-type: application/json
             &quot;active&quot;: false
         },
         {
-            &quot;url&quot;: &quot;http://laravel-api.test/api/admins?page=1&quot;,
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=1&quot;,
             &quot;label&quot;: &quot;1&quot;,
             &quot;active&quot;: true
         },
         {
-            &quot;url&quot;: &quot;http://laravel-api.test/api/admins?page=2&quot;,
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=2&quot;,
             &quot;label&quot;: &quot;2&quot;,
             &quot;active&quot;: false
         },
         {
-            &quot;url&quot;: &quot;http://laravel-api.test/api/admins?page=2&quot;,
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=3&quot;,
+            &quot;label&quot;: &quot;3&quot;,
+            &quot;active&quot;: false
+        },
+        {
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=4&quot;,
+            &quot;label&quot;: &quot;4&quot;,
+            &quot;active&quot;: false
+        },
+        {
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=5&quot;,
+            &quot;label&quot;: &quot;5&quot;,
+            &quot;active&quot;: false
+        },
+        {
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=6&quot;,
+            &quot;label&quot;: &quot;6&quot;,
+            &quot;active&quot;: false
+        },
+        {
+            &quot;url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=2&quot;,
             &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
             &quot;active&quot;: false
         }
     ],
-    &quot;next_page_url&quot;: &quot;http://laravel-api.test/api/admins?page=2&quot;,
-    &quot;path&quot;: &quot;http://laravel-api.test/api/admins&quot;,
+    &quot;next_page_url&quot;: &quot;http://laravel-api.test/api/mongodb-users?page=2&quot;,
+    &quot;path&quot;: &quot;http://laravel-api.test/api/mongodb-users&quot;,
     &quot;per_page&quot;: 15,
     &quot;prev_page_url&quot;: null,
     &quot;to&quot;: 15,
-    &quot;total&quot;: 16
+    &quot;total&quot;: 79
 }</code>
  </pre>
     </span>
-        <span id="execution-results-GETapi-admins" hidden>
+        <span id="execution-results-GETapi-mongodb-users" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-admins"></span>:
+                id="execution-response-status-GETapi-mongodb-users"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-admins"></code></pre>
+    <pre class="json"><code id="execution-response-content-GETapi-mongodb-users"></code></pre>
 </span>
-        <span id="execution-error-GETapi-admins" hidden>
+        <span id="execution-error-GETapi-mongodb-users" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-admins"></code></pre>
+    <pre><code id="execution-error-message-GETapi-mongodb-users"></code></pre>
 </span>
-        <form id="form-GETapi-admins" data-method="GET"
-              data-path="api/admins"
+        <form id="form-GETapi-mongodb-users" data-method="GET"
+              data-path="api/mongodb-users"
               data-authed="0"
               data-hasfiles="0"
               data-isarraybody="0"
               data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
               autocomplete="off"
-              onsubmit="event.preventDefault(); executeTryOut('GETapi-admins', this);">
+              onsubmit="event.preventDefault(); executeTryOut('GETapi-mongodb-users', this);">
             <h3>
                 Request&nbsp;&nbsp;&nbsp;
                 <button type="button"
                         style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-tryout-GETapi-admins"
-                        onclick="tryItOut('GETapi-admins');">Try it out ⚡
+                        id="btn-tryout-GETapi-mongodb-users"
+                        onclick="tryItOut('GETapi-mongodb-users');">Try it out ⚡
                 </button>
                 <button type="button"
                         style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-canceltryout-GETapi-admins"
-                        onclick="cancelTryOut('GETapi-admins');" hidden>Cancel
+                        id="btn-canceltryout-GETapi-mongodb-users"
+                        onclick="cancelTryOut('GETapi-mongodb-users');" hidden>Cancel
                 </button>&nbsp;&nbsp;
                 <button type="submit"
                         style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-executetryout-GETapi-admins" hidden>Send Request 💥
+                        id="btn-executetryout-GETapi-mongodb-users" hidden>Send Request 💥
                 </button>
             </h3>
             <p>
                 <small class="badge badge-green">GET</small>
-                <b><code>api/admins</code></b>
+                <b><code>api/mongodb-users</code></b>
             </p>
         </form>
 
-        <h2 id="endpoints-GETapi-admins--uuid-">Request to retrieve a single item of this resource</h2>
+        <h2 id="endpoints-GETapi-mongodb-users--uuid-">Request to retrieve a single item of this resource</h2>
 
         <p>
         </p>
 
 
-        <span id="example-requests-GETapi-admins--uuid-">
+        <span id="example-requests-GETapi-mongodb-users--uuid-">
 <blockquote>Example request:</blockquote>
 
 
 <pre><code class="language-bash">curl --request GET \
-    --get "http://laravel-api.test/api/admins/officiis" \
+    --get "http://laravel-api.test/api/mongodb-users/quibusdam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/admins/officiis"
+    "http://laravel-api.test/api/mongodb-users/quibusdam"
 );
 
 const headers = {
@@ -1623,7 +1644,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'http://laravel-api.test/api/admins/officiis',
+    'http://laravel-api.test/api/mongodb-users/quibusdam',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1635,77 +1656,77 @@ $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 </span>
 
-        <span id="example-responses-GETapi-admins--uuid-">
+        <span id="example-responses-GETapi-mongodb-users--uuid-">
     </span>
-        <span id="execution-results-GETapi-admins--uuid-" hidden>
+        <span id="execution-results-GETapi-mongodb-users--uuid-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-admins--uuid-"></span>:
+                id="execution-response-status-GETapi-mongodb-users--uuid-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-admins--uuid-"></code></pre>
+    <pre class="json"><code id="execution-response-content-GETapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <span id="execution-error-GETapi-admins--uuid-" hidden>
+        <span id="execution-error-GETapi-mongodb-users--uuid-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-admins--uuid-"></code></pre>
+    <pre><code id="execution-error-message-GETapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <form id="form-GETapi-admins--uuid-" data-method="GET"
-              data-path="api/admins/{uuid}"
+        <form id="form-GETapi-mongodb-users--uuid-" data-method="GET"
+              data-path="api/mongodb-users/{uuid}"
               data-authed="0"
               data-hasfiles="0"
               data-isarraybody="0"
               data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
               autocomplete="off"
-              onsubmit="event.preventDefault(); executeTryOut('GETapi-admins--uuid-', this);">
+              onsubmit="event.preventDefault(); executeTryOut('GETapi-mongodb-users--uuid-', this);">
             <h3>
                 Request&nbsp;&nbsp;&nbsp;
                 <button type="button"
                         style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-tryout-GETapi-admins--uuid-"
-                        onclick="tryItOut('GETapi-admins--uuid-');">Try it out ⚡
+                        id="btn-tryout-GETapi-mongodb-users--uuid-"
+                        onclick="tryItOut('GETapi-mongodb-users--uuid-');">Try it out ⚡
                 </button>
                 <button type="button"
                         style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-canceltryout-GETapi-admins--uuid-"
-                        onclick="cancelTryOut('GETapi-admins--uuid-');" hidden>Cancel
+                        id="btn-canceltryout-GETapi-mongodb-users--uuid-"
+                        onclick="cancelTryOut('GETapi-mongodb-users--uuid-');" hidden>Cancel
                 </button>&nbsp;&nbsp;
                 <button type="submit"
                         style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-executetryout-GETapi-admins--uuid-" hidden>Send Request 💥
+                        id="btn-executetryout-GETapi-mongodb-users--uuid-" hidden>Send Request 💥
                 </button>
             </h3>
             <p>
                 <small class="badge badge-green">GET</small>
-                <b><code>api/admins/{uuid}</code></b>
+                <b><code>api/mongodb-users/{uuid}</code></b>
             </p>
             <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
             <p>
                 <b><code>uuid</code></b>&nbsp;&nbsp;<small>string</small> &nbsp;
                 <input type="text"
                        name="uuid"
-                       data-endpoint="GETapi-admins--uuid-"
-                       value="officiis"
+                       data-endpoint="GETapi-mongodb-users--uuid-"
+                       value="quibusdam"
                        data-component="url" hidden>
                 <br>
 
             </p>
         </form>
 
-        <h2 id="endpoints-POSTapi-admins">Request to create a new resource</h2>
+        <h2 id="endpoints-POSTapi-mongodb-users">Request to create a new resource</h2>
 
         <p>
         </p>
 
 
-        <span id="example-requests-POSTapi-admins">
+        <span id="example-requests-POSTapi-mongodb-users">
 <blockquote>Example request:</blockquote>
 
 
 <pre><code class="language-bash">curl --request POST \
-    "http://laravel-api.test/api/admins" \
+    "http://laravel-api.test/api/mongodb-users" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/admins"
+    "http://laravel-api.test/api/mongodb-users"
 );
 
 const headers = {
@@ -1720,7 +1741,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;post(
-    'http://laravel-api.test/api/admins',
+    'http://laravel-api.test/api/mongodb-users',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1732,66 +1753,66 @@ $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 </span>
 
-        <span id="example-responses-POSTapi-admins">
+        <span id="example-responses-POSTapi-mongodb-users">
 </span>
-        <span id="execution-results-POSTapi-admins" hidden>
+        <span id="execution-results-POSTapi-mongodb-users" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-admins"></span>:
+                id="execution-response-status-POSTapi-mongodb-users"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-admins"></code></pre>
+    <pre class="json"><code id="execution-response-content-POSTapi-mongodb-users"></code></pre>
 </span>
-        <span id="execution-error-POSTapi-admins" hidden>
+        <span id="execution-error-POSTapi-mongodb-users" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-admins"></code></pre>
+    <pre><code id="execution-error-message-POSTapi-mongodb-users"></code></pre>
 </span>
-        <form id="form-POSTapi-admins" data-method="POST"
-              data-path="api/admins"
+        <form id="form-POSTapi-mongodb-users" data-method="POST"
+              data-path="api/mongodb-users"
               data-authed="0"
               data-hasfiles="0"
               data-isarraybody="0"
               data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
               autocomplete="off"
-              onsubmit="event.preventDefault(); executeTryOut('POSTapi-admins', this);">
+              onsubmit="event.preventDefault(); executeTryOut('POSTapi-mongodb-users', this);">
             <h3>
                 Request&nbsp;&nbsp;&nbsp;
                 <button type="button"
                         style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-tryout-POSTapi-admins"
-                        onclick="tryItOut('POSTapi-admins');">Try it out ⚡
+                        id="btn-tryout-POSTapi-mongodb-users"
+                        onclick="tryItOut('POSTapi-mongodb-users');">Try it out ⚡
                 </button>
                 <button type="button"
                         style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-canceltryout-POSTapi-admins"
-                        onclick="cancelTryOut('POSTapi-admins');" hidden>Cancel
+                        id="btn-canceltryout-POSTapi-mongodb-users"
+                        onclick="cancelTryOut('POSTapi-mongodb-users');" hidden>Cancel
                 </button>&nbsp;&nbsp;
                 <button type="submit"
                         style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-executetryout-POSTapi-admins" hidden>Send Request 💥
+                        id="btn-executetryout-POSTapi-mongodb-users" hidden>Send Request 💥
                 </button>
             </h3>
             <p>
                 <small class="badge badge-black">POST</small>
-                <b><code>api/admins</code></b>
+                <b><code>api/mongodb-users</code></b>
             </p>
         </form>
 
-        <h2 id="endpoints-PUTapi-admins--uuid-">Request to create or replace a resource</h2>
+        <h2 id="endpoints-PUTapi-mongodb-users--uuid-">Request to create or replace a resource</h2>
 
         <p>
         </p>
 
 
-        <span id="example-requests-PUTapi-admins--uuid-">
+        <span id="example-requests-PUTapi-mongodb-users--uuid-">
 <blockquote>Example request:</blockquote>
 
 
 <pre><code class="language-bash">curl --request PUT \
-    "http://laravel-api.test/api/admins/quia" \
+    "http://laravel-api.test/api/mongodb-users/veritatis" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/admins/quia"
+    "http://laravel-api.test/api/mongodb-users/veritatis"
 );
 
 const headers = {
@@ -1806,7 +1827,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'http://laravel-api.test/api/admins/quia',
+    'http://laravel-api.test/api/mongodb-users/veritatis',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1818,77 +1839,77 @@ $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 </span>
 
-        <span id="example-responses-PUTapi-admins--uuid-">
+        <span id="example-responses-PUTapi-mongodb-users--uuid-">
 </span>
-        <span id="execution-results-PUTapi-admins--uuid-" hidden>
+        <span id="execution-results-PUTapi-mongodb-users--uuid-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-PUTapi-admins--uuid-"></span>:
+                id="execution-response-status-PUTapi-mongodb-users--uuid-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-admins--uuid-"></code></pre>
+    <pre class="json"><code id="execution-response-content-PUTapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <span id="execution-error-PUTapi-admins--uuid-" hidden>
+        <span id="execution-error-PUTapi-mongodb-users--uuid-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-admins--uuid-"></code></pre>
+    <pre><code id="execution-error-message-PUTapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <form id="form-PUTapi-admins--uuid-" data-method="PUT"
-              data-path="api/admins/{uuid}"
+        <form id="form-PUTapi-mongodb-users--uuid-" data-method="PUT"
+              data-path="api/mongodb-users/{uuid}"
               data-authed="0"
               data-hasfiles="0"
               data-isarraybody="0"
               data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
               autocomplete="off"
-              onsubmit="event.preventDefault(); executeTryOut('PUTapi-admins--uuid-', this);">
+              onsubmit="event.preventDefault(); executeTryOut('PUTapi-mongodb-users--uuid-', this);">
             <h3>
                 Request&nbsp;&nbsp;&nbsp;
                 <button type="button"
                         style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-tryout-PUTapi-admins--uuid-"
-                        onclick="tryItOut('PUTapi-admins--uuid-');">Try it out ⚡
+                        id="btn-tryout-PUTapi-mongodb-users--uuid-"
+                        onclick="tryItOut('PUTapi-mongodb-users--uuid-');">Try it out ⚡
                 </button>
                 <button type="button"
                         style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-canceltryout-PUTapi-admins--uuid-"
-                        onclick="cancelTryOut('PUTapi-admins--uuid-');" hidden>Cancel
+                        id="btn-canceltryout-PUTapi-mongodb-users--uuid-"
+                        onclick="cancelTryOut('PUTapi-mongodb-users--uuid-');" hidden>Cancel
                 </button>&nbsp;&nbsp;
                 <button type="submit"
                         style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-executetryout-PUTapi-admins--uuid-" hidden>Send Request 💥
+                        id="btn-executetryout-PUTapi-mongodb-users--uuid-" hidden>Send Request 💥
                 </button>
             </h3>
             <p>
                 <small class="badge badge-darkblue">PUT</small>
-                <b><code>api/admins/{uuid}</code></b>
+                <b><code>api/mongodb-users/{uuid}</code></b>
             </p>
             <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
             <p>
                 <b><code>uuid</code></b>&nbsp;&nbsp;<small>string</small> &nbsp;
                 <input type="text"
                        name="uuid"
-                       data-endpoint="PUTapi-admins--uuid-"
-                       value="quia"
+                       data-endpoint="PUTapi-mongodb-users--uuid-"
+                       value="veritatis"
                        data-component="url" hidden>
                 <br>
 
             </p>
         </form>
 
-        <h2 id="endpoints-PATCHapi-admins--uuid-">Request to update the specified resource</h2>
+        <h2 id="endpoints-PATCHapi-mongodb-users--uuid-">Request to update the specified resource</h2>
 
         <p>
         </p>
 
 
-        <span id="example-requests-PATCHapi-admins--uuid-">
+        <span id="example-requests-PATCHapi-mongodb-users--uuid-">
 <blockquote>Example request:</blockquote>
 
 
 <pre><code class="language-bash">curl --request PATCH \
-    "http://laravel-api.test/api/admins/mollitia" \
+    "http://laravel-api.test/api/mongodb-users/qui" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/admins/mollitia"
+    "http://laravel-api.test/api/mongodb-users/qui"
 );
 
 const headers = {
@@ -1903,7 +1924,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;patch(
-    'http://laravel-api.test/api/admins/mollitia',
+    'http://laravel-api.test/api/mongodb-users/qui',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -1915,77 +1936,77 @@ $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 </span>
 
-        <span id="example-responses-PATCHapi-admins--uuid-">
+        <span id="example-responses-PATCHapi-mongodb-users--uuid-">
 </span>
-        <span id="execution-results-PATCHapi-admins--uuid-" hidden>
+        <span id="execution-results-PATCHapi-mongodb-users--uuid-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-admins--uuid-"></span>:
+                id="execution-response-status-PATCHapi-mongodb-users--uuid-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-admins--uuid-"></code></pre>
+    <pre class="json"><code id="execution-response-content-PATCHapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <span id="execution-error-PATCHapi-admins--uuid-" hidden>
+        <span id="execution-error-PATCHapi-mongodb-users--uuid-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-admins--uuid-"></code></pre>
+    <pre><code id="execution-error-message-PATCHapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <form id="form-PATCHapi-admins--uuid-" data-method="PATCH"
-              data-path="api/admins/{uuid}"
+        <form id="form-PATCHapi-mongodb-users--uuid-" data-method="PATCH"
+              data-path="api/mongodb-users/{uuid}"
               data-authed="0"
               data-hasfiles="0"
               data-isarraybody="0"
               data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
               autocomplete="off"
-              onsubmit="event.preventDefault(); executeTryOut('PATCHapi-admins--uuid-', this);">
+              onsubmit="event.preventDefault(); executeTryOut('PATCHapi-mongodb-users--uuid-', this);">
             <h3>
                 Request&nbsp;&nbsp;&nbsp;
                 <button type="button"
                         style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-tryout-PATCHapi-admins--uuid-"
-                        onclick="tryItOut('PATCHapi-admins--uuid-');">Try it out ⚡
+                        id="btn-tryout-PATCHapi-mongodb-users--uuid-"
+                        onclick="tryItOut('PATCHapi-mongodb-users--uuid-');">Try it out ⚡
                 </button>
                 <button type="button"
                         style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-canceltryout-PATCHapi-admins--uuid-"
-                        onclick="cancelTryOut('PATCHapi-admins--uuid-');" hidden>Cancel
+                        id="btn-canceltryout-PATCHapi-mongodb-users--uuid-"
+                        onclick="cancelTryOut('PATCHapi-mongodb-users--uuid-');" hidden>Cancel
                 </button>&nbsp;&nbsp;
                 <button type="submit"
                         style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-executetryout-PATCHapi-admins--uuid-" hidden>Send Request 💥
+                        id="btn-executetryout-PATCHapi-mongodb-users--uuid-" hidden>Send Request 💥
                 </button>
             </h3>
             <p>
                 <small class="badge badge-purple">PATCH</small>
-                <b><code>api/admins/{uuid}</code></b>
+                <b><code>api/mongodb-users/{uuid}</code></b>
             </p>
             <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
             <p>
                 <b><code>uuid</code></b>&nbsp;&nbsp;<small>string</small> &nbsp;
                 <input type="text"
                        name="uuid"
-                       data-endpoint="PATCHapi-admins--uuid-"
-                       value="mollitia"
+                       data-endpoint="PATCHapi-mongodb-users--uuid-"
+                       value="qui"
                        data-component="url" hidden>
                 <br>
 
             </p>
         </form>
 
-        <h2 id="endpoints-DELETEapi-admins--uuid-">Deletes a resource by UUID</h2>
+        <h2 id="endpoints-DELETEapi-mongodb-users--uuid-">Deletes a resource by UUID</h2>
 
         <p>
         </p>
 
 
-        <span id="example-requests-DELETEapi-admins--uuid-">
+        <span id="example-requests-DELETEapi-mongodb-users--uuid-">
 <blockquote>Example request:</blockquote>
 
 
 <pre><code class="language-bash">curl --request DELETE \
-    "http://laravel-api.test/api/admins/atque" \
+    "http://laravel-api.test/api/mongodb-users/est" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api.test/api/admins/atque"
+    "http://laravel-api.test/api/mongodb-users/est"
 );
 
 const headers = {
@@ -2000,7 +2021,7 @@ fetch(url, {
 
 <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://laravel-api.test/api/admins/atque',
+    'http://laravel-api.test/api/mongodb-users/est',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -2012,57 +2033,143 @@ $body = $response-&gt;getBody();
 print_r(json_decode((string) $body));</code></pre>
 </span>
 
-        <span id="example-responses-DELETEapi-admins--uuid-">
+        <span id="example-responses-DELETEapi-mongodb-users--uuid-">
 </span>
-        <span id="execution-results-DELETEapi-admins--uuid-" hidden>
+        <span id="execution-results-DELETEapi-mongodb-users--uuid-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-admins--uuid-"></span>:
+                id="execution-response-status-DELETEapi-mongodb-users--uuid-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-admins--uuid-"></code></pre>
+    <pre class="json"><code id="execution-response-content-DELETEapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <span id="execution-error-DELETEapi-admins--uuid-" hidden>
+        <span id="execution-error-DELETEapi-mongodb-users--uuid-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-admins--uuid-"></code></pre>
+    <pre><code id="execution-error-message-DELETEapi-mongodb-users--uuid-"></code></pre>
 </span>
-        <form id="form-DELETEapi-admins--uuid-" data-method="DELETE"
-              data-path="api/admins/{uuid}"
+        <form id="form-DELETEapi-mongodb-users--uuid-" data-method="DELETE"
+              data-path="api/mongodb-users/{uuid}"
               data-authed="0"
               data-hasfiles="0"
               data-isarraybody="0"
               data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
               autocomplete="off"
-              onsubmit="event.preventDefault(); executeTryOut('DELETEapi-admins--uuid-', this);">
+              onsubmit="event.preventDefault(); executeTryOut('DELETEapi-mongodb-users--uuid-', this);">
             <h3>
                 Request&nbsp;&nbsp;&nbsp;
                 <button type="button"
                         style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-tryout-DELETEapi-admins--uuid-"
-                        onclick="tryItOut('DELETEapi-admins--uuid-');">Try it out ⚡
+                        id="btn-tryout-DELETEapi-mongodb-users--uuid-"
+                        onclick="tryItOut('DELETEapi-mongodb-users--uuid-');">Try it out ⚡
                 </button>
                 <button type="button"
                         style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-canceltryout-DELETEapi-admins--uuid-"
-                        onclick="cancelTryOut('DELETEapi-admins--uuid-');" hidden>Cancel
+                        id="btn-canceltryout-DELETEapi-mongodb-users--uuid-"
+                        onclick="cancelTryOut('DELETEapi-mongodb-users--uuid-');" hidden>Cancel
                 </button>&nbsp;&nbsp;
                 <button type="submit"
                         style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                        id="btn-executetryout-DELETEapi-admins--uuid-" hidden>Send Request 💥
+                        id="btn-executetryout-DELETEapi-mongodb-users--uuid-" hidden>Send Request 💥
                 </button>
             </h3>
             <p>
                 <small class="badge badge-red">DELETE</small>
-                <b><code>api/admins/{uuid}</code></b>
+                <b><code>api/mongodb-users/{uuid}</code></b>
             </p>
             <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
             <p>
                 <b><code>uuid</code></b>&nbsp;&nbsp;<small>string</small> &nbsp;
                 <input type="text"
                        name="uuid"
-                       data-endpoint="DELETEapi-admins--uuid-"
-                       value="atque"
+                       data-endpoint="DELETEapi-mongodb-users--uuid-"
+                       value="est"
                        data-component="url" hidden>
                 <br>
 
+            </p>
+        </form>
+
+        <h2 id="endpoints-GETapi-mongodb-users-check-password">Check existing MongoDB password hash</h2>
+
+        <p>
+        </p>
+
+
+        <span id="example-requests-GETapi-mongodb-users-check-password">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request GET \
+    --get "http://laravel-api.test/api/mongodb-users/check-password" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://laravel-api.test/api/mongodb-users/check-password"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+
+<pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;get(
+    'http://laravel-api.test/api/mongodb-users/check-password',
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre>
+</span>
+
+        <span id="example-responses-GETapi-mongodb-users-check-password">
+    </span>
+        <span id="execution-results-GETapi-mongodb-users-check-password" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-mongodb-users-check-password"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-mongodb-users-check-password"></code></pre>
+</span>
+        <span id="execution-error-GETapi-mongodb-users-check-password" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-mongodb-users-check-password"></code></pre>
+</span>
+        <form id="form-GETapi-mongodb-users-check-password" data-method="GET"
+              data-path="api/mongodb-users/check-password"
+              data-authed="0"
+              data-hasfiles="0"
+              data-isarraybody="0"
+              data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+              autocomplete="off"
+              onsubmit="event.preventDefault(); executeTryOut('GETapi-mongodb-users-check-password', this);">
+            <h3>
+                Request&nbsp;&nbsp;&nbsp;
+                <button type="button"
+                        style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                        id="btn-tryout-GETapi-mongodb-users-check-password"
+                        onclick="tryItOut('GETapi-mongodb-users-check-password');">Try it out ⚡
+                </button>
+                <button type="button"
+                        style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                        id="btn-canceltryout-GETapi-mongodb-users-check-password"
+                        onclick="cancelTryOut('GETapi-mongodb-users-check-password');" hidden>Cancel
+                </button>&nbsp;&nbsp;
+                <button type="submit"
+                        style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                        id="btn-executetryout-GETapi-mongodb-users-check-password" hidden>Send Request 💥
+                </button>
+            </h3>
+            <p>
+                <small class="badge badge-green">GET</small>
+                <b><code>api/mongodb-users/check-password</code></b>
             </p>
         </form>
 
