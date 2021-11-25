@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-class Admin extends MongoModel
+class MongoUser extends MongoModel
 {
     protected $connection = 'mongodb';
 
-    protected $collection = 'admin';
+    protected $collection = 'users';
 }

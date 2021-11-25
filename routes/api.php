@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\MongoUserController;
 use App\Http\Controllers\PlayGroundController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
@@ -100,14 +100,15 @@ $api->version('v1', ['middleware' => ['api']], function (Router $api) {
     });
 
     /*
-     * Admins
+     * MongoDB Users
      */
-    $api->group(['prefix' => 'admins'], function (Router $api) {
-        $api->get('/', [AdminController::class, 'getAll']);
-        $api->get('/{uuid}', [AdminController::class, 'get']);
-        $api->post('/', [AdminController::class, 'post']);
-        $api->put('/{uuid}', [AdminController::class, 'put']);
-        $api->patch('/{uuid}', [AdminController::class, 'patch']);
-        $api->delete('/{uuid}', [AdminController::class, 'delete']);
+    $api->group(['prefix' => 'mongodb-users'], function (Router $api) {
+        $api->get('/', [MongoUserController::class, 'getAll']);
+        $api->get('/{uuid}', [MongoUserController::class, 'get']);
+        $api->post('/', [MongoUserController::class, 'post']);
+        $api->put('/{uuid}', [MongoUserController::class, 'put']);
+        $api->patch('/{uuid}', [MongoUserController::class, 'patch']);
+        $api->delete('/{uuid}', [MongoUserController::class, 'delete']);
+        $api->get('/check-password', [MongoUserController::class, 'checkPassword']);
     });
 });
